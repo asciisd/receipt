@@ -1,0 +1,58 @@
+{
+  "name": "asciisd/receipt",
+  "description": "Receipt package is provides an expressive, fluent interface to Receipt's payment services.",
+  "keywords": [
+    "Laravel",
+    "billing",
+    "Receipt"
+  ],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/asciisd/receipt/issues",
+    "source": "https://github.com/asciisd/receipt"
+  },
+  "authors": [
+    {
+      "name": "Amr Ahmed",
+      "email": "aemaddin@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "illuminate/support": "*"
+  },
+  "suggest": {
+    "ext-intl": "Allows for more locales besides the default \"en\" when formatting money values."
+  },
+  "autoload": {
+    "psr-4": {
+      "Asciisd\\Receipt\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Asciisd\\Receipt\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Asciisd\\Receipt\\Providers\\ReceiptServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require-dev": {
+    "orchestra/testbench": "^9.9",
+    "pestphp/pest": "^3.7",
+    "phpstan/phpstan": "^2.1"
+  }
+}
